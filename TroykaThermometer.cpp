@@ -23,7 +23,7 @@ void TroykaThermometer::readData() {
         sensorADC += analogRead(_pin);
     }
     sensorADC = sensorADC >> 5;
-  	sensorVoltage = sensorADC * (OPERATING_VOLTAGE / ADC_VALUE_MAX);
+    sensorVoltage = sensorADC * (OPERATING_VOLTAGE / ADC_VALUE_MAX);
     _sensorTemperatureC = (sensorVoltage - 0.5) * 100;
     _sensorTemperatureK = _sensorTemperatureC + CELSIUS_TO_KELVIN;
     _sensorTemperatureF = (_sensorTemperatureC * 9.0 / 5.0) + 32.0;
