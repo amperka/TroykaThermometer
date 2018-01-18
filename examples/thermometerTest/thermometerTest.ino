@@ -3,7 +3,7 @@
 
 // создаём объект для работы с аналоговым термометром
 // и передаём ему номер пина выходного сигнала
-TroykaThermometer thermometer(A1);
+TroykaThermometer thermometer(A0);
 
 void setup()
 {
