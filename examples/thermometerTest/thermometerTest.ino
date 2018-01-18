@@ -19,11 +19,11 @@ void loop()
   Serial.print("Temperature is ");
   Serial.print(thermometer.getTemperatureC());
   Serial.println(" C");
-  // вывод показателей аналогового термометра в градусах Цельсия
+  // вывод показателей аналогового термометра в градусах Кельвина
   Serial.print("Temperature is ");
   Serial.print(thermometer.getTemperatureK());
   Serial.println(" K");
-  // вывод показателей аналогового термометра в градусах Цельсия
+  // вывод показателей аналогового термометра в градусах Фаренгейта
   Serial.print("Temperature is ");
   Serial.print(thermometer.getTemperatureF());
   Serial.println(" F");
